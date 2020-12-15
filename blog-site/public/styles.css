@@ -1,0 +1,40 @@
+body{
+font-family: 'Raleway', sans-serif;
+text-align: left;
+}
+
+nav{
+  text-align: right;
+  padding:2%;
+background-color:#393e46;
+
+}
+a{
+  text-align: right;
+  margin: 1%;
+  color:white;
+}
+a:hover{
+  text-decoration: none;
+  color: #adb5bd
+}
+form {
+  padding: 20px 0;
+  position: relative;
+}
+.container{
+  padding:5%;
+}
+.login-btn{
+  border-color: #393e46
+}
+.login-btn:hover{
+  background-color:#393e46;
+  color: white;
+}
+.login-container{
+  text-align: center;
+}
+.login-input{
+  text-align: center;
+}
