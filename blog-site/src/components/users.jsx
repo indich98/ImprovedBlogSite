@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 
 
 function Users() {
+
+  const [users, setUsers]=useState([]);
+
   return (
     <div className="container-fluid">
 

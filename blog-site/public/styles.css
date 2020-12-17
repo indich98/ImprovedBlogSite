@@ -26,7 +26,7 @@ form {
   padding:5%;
 }
 .login-btn{
-  border-color: #393e46
+  border-color: #393e46;
 }
 .login-btn:hover{
   background-color:#393e46;
@@ -37,4 +37,16 @@ form {
 }
 .login-input{
   text-align: center;
+}
+.logout-btn{
+  color: white;
+}
+.logout-btn:hover{
+    color: #adb5bd;
+}
+.post-btn{
+    border-color: #393e46;
+}
+.compose-div{
+  padding:2% 7%;
 }

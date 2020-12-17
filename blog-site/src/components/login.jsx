@@ -9,6 +9,20 @@ function Login() {
   const[loginUsername, setLoginUsername]=useState("");
   const[loginPassword, setLoginPassword]=useState("");
 
+
+  const[userData, setUserData]=useState(null);
+
+  function getUser(event){
+    axios({
+      method:"get",
+      withCredentials:true,
+      url:"http://localhost:4000/user",
+    })
+    .then(res => setUserData(res.data))
+    ;
+  };
+
+
   function login(event){
     axios({
       method:"post",
@@ -19,7 +33,7 @@ function Login() {
       withCredentials:true,
       url:"http://localhost:4000/log-in",
     })
-    .then(res => console.log(res));
+    .then(res => getUser(res));
   };
 
   function register(event){

@@ -3,14 +3,14 @@ import React, {useState} from 'react';
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import Home from "./home";
 import Login from "./login";
-import Blog from "./blog";
+import Compose from "./compose";
 import Users from "./users";
 import Navbar from "./navbar"
 import axios from "axios";
 
 function App(){
 
-const[userIsLoggedIn, setUserIsLoggedIn]=useState(false);
+const[userIsLoggedIn, setUserIsLoggedIn]=useState(true);
 const[userData, setUserData]=useState(null);
 
 function getUser(event){
@@ -30,8 +30,8 @@ function getUser(event){
           <Route path="/users" >
             <Users />
           </Route>
-            <Route path="/blog">
-              <Blog />
+            <Route path="/compose">
+              <Compose />
             </Route>
             <Route path="/login">
               <Login  />
